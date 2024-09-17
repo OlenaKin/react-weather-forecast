@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+/*  */
+/* Body Styles */
+body {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  background-color: rgb(183, 194, 199);
+  margin: 0;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Overall Container */
+.overall-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem;
+  border: 1.5rem solid #2b81ac;
+  text-align: left;
+  background-color: #3399cc;
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Header Styles */
+h1 {
+  font-size: 21px;
+  padding: 0 4rem;
   color: white;
+  margin-bottom: 2.37rem;
 }
 
-.App-link {
-  color: #61dafb;
+h2 {
+  white-space: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+i {
+  font-size: 30px;
+}
+
+p {
+  display: block;
+  white-space: wrap;
+  margin-bottom: 10px;
+  margin-top: 9px;
+}
+
+/* Container Styles */
+.container {
+  font-size: 0; /* Remove whitespace between inline-block elements */
+  max-width: 72.9rem;
+  height: 36.7rem;
+  cursor: pointer;
+  font-weight: 400;
+  margin: 4rem auto;
+}
+
+/* List Styles */
+.container-ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 2.19rem;
+  border: 1.5px solid white;
+}
+
+.container li {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+  color: white;
+  /*font-size: 1.37rem;*/
+  border: 1.5px solid white;
+  box-sizing: border-box;
+  padding-top: 1.37rem;
+  opacity: 0.7; /* Default opacity */
+  height: 147px;
+  width: 25%; /* Default width */
+  text-align: center; /* Center content */
+}
+
+li {
+  opacity: 0.7;
+}
+
+span {
+  display: inline-block;
+  /*vertical-align: top;*/
+  margin-bottom: 1.25rem;
+  margin-right: 7px;
+}
+
+.container li:hover {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* Specific List Item Styles */
+.container li:nth-child(1) {
+  background-color: #3399cc;
+  width: 50%;
+}
+
+.container li:nth-child(2) {
+  background-color: #33cccc;
+}
+
+.container li:nth-child(3) {
+  background-color: #996699;
+}
+
+.container li:nth-child(4) {
+  background-color: #c24747;
+}
+
+.container li:nth-child(5) {
+  background-color: #e2674a;
+}
+
+.container li:nth-child(6) {
+  background-color: #ffcc66;
+}
+
+.container li:nth-child(7) {
+  background-color: #99cc99;
+}
+
+.container li:nth-child(8) {
+  background-color: #669999;
+}
+
+.container li:nth-child(9) {
+  background-color: #cc6699;
+  width: 50%;
+}
+
+.container li:nth-child(10) {
+  background-color: #339966;
+}
+
+.container li:nth-child(11) {
+  background-color: #666699;
+  width: 100%;
+}
+
+/* Footer Styles */
+.footer-paragraph {
+  color: white;
+  font-size: 1rem;
+  text-align: left;
+  padding: 0 4rem;
+}
+
+/* Global Transition */
+* {
+  transition: all 0.1s ease-in;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.37rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container li {
+    font-size: 1.37rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+  }
+
+  .container li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+  }
+  .container li {
+    font-size: 0.7rem;
   }
 }
